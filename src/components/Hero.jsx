@@ -5,9 +5,9 @@ import { FaInstagram, FaLinkedin, FaGlobe, FaBehance } from "react-icons/fa";
 
 function Hero() {
   return (
-    <section className="flex justify-between items-center px-20 py-10">
+    <section id="home" className="flex items-center px-20 py-20">
       {/* Left Content */}
-      <div>
+      <div className="w-4/6 pl-10">
         <p className="text-gray-400">Hi I am</p>
         <h2 className="text-3xl font-bold">Ilesanmi Oluwatobiloba</h2>
         <h1 className="text-4xl font-bold text-orange-500 mt-4">
@@ -46,7 +46,7 @@ function Hero() {
       </div>
 
       {/* Right Image */}
-      <div className="w-2/6 pt-10">
+      <div className="w-2/6 pl-10">
         <img src="/portfolioprofilepic.jpg" alt="profile" className="rounded-full" />
       </div>
     </section>

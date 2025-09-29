@@ -26,7 +26,7 @@ function Navbar() {
     { id: "home", label: "Home" },
     { id: "services", label: "Services" },
     { id: "about", label: "About me" },
-    { id: "portfolio", label: "Portfolio" },
+    { id: "projects", label: "Portfolio" },
     { id: "contact", label: "Contact me" },
   ];
 
