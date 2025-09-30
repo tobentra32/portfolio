@@ -3,3 +3,8 @@
 html {
   scroll-behavior: smooth;
 }
+/* This makes sure no extra white gap appears */
+html, body {
+  margin: 0;
+  padding: 0;
+}
