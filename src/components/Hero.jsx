@@ -68,7 +68,7 @@ function Hero() {
       {/* Right Image */}
       <div className="w-full md:w-2/6 flex justify-center">
         <img
-          src="/portfolioprofilepic.jpg"
+          src="./images/portfolioprofilepic.jpg"
           alt="profile"
           className="rounded-full max-w-[200px] sm:max-w-[250px] md:max-w-[350px] w-full object-cover shadow-lg"
         />

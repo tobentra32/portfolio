@@ -2,9 +2,10 @@ import React from "react";
 
 const Projects = () => {
   const projects = [
-    { name: "Project 1", img: "/work1.png", category: "Web Design" },
-    { name: "Project 2", img: "/work2.png", category: "App Design" },
-    { name: "Project 3", img: "/work3.png", category: "Branding" },
+    { name: "Project 1", img: "./images/tokendapp.png", category: "Web Design" },
+    { name: "Project 2", img: "./images/rentapp.png", category: "App Design" },
+    { name: "Project 3", img: "./images/twitter.png", category: "Branding" },
+    { name: "Project 3", img: "./images/nftmarketplace.png", category: "Branding" },
   ];
 
   return (
