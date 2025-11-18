@@ -9,7 +9,7 @@ function Hero() {
              py-12 sm:py-12 md:py-16 lg:py-20"
     >
       {/* Left Content - Intro */}
-      <div className="w-full md:w-4/6 md:pr-10 text-center md:text-left mb-8 md:mb-0">
+      <div className="w-full md:w-4/6 md:pr-10 text-center lg:px-50 md:text-left mb-8 md:mb-0">
         <p className="text-gray-400 text-sm sm:text-base">Hi I am</p>
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold">
           Ilesanmi Oluwatobiloba

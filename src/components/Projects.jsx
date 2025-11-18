@@ -2,28 +2,24 @@ import React from "react";
 
 const Projects = () => {
   const projects = [
-    { name: "Project 1", img: "./images/tokendapp.png", category: "Web Design" },
-    { name: "Project 2", img: "./images/rentapp.png", category: "App Design" },
-    { name: "Project 3", img: "./images/twitter.png", category: "Branding" },
-    { name: "Project 3", img: "./images/nftmarketplace.png", category: "Branding" },
+    { name: "An ERC20 Token", img: "./images/tokendapp.png", description: "This is a project where users are able to buy our deployed token", skills: ["Solidity", "Ethers.js", "Hardhat"] },
+    { name: "Blockchain Rent Application", img: "./images/rentapp.png", description: "This project is a decentralized application built on the Ethereum blockchain. It is a rental marketplace where users can create, book, and review apartments. The project revolves around DappBnb.sol, a Solidity-written Ethereum smart contract. It leverages the OpenZeppelin library to ensure secure and standardized development of the contract.", skills: ["Solidity", "Ethers.js", "Hardhat"] },
+    { name: "Twitter Lookalike", img: "./images/twitter.png", description: "This is an X look alike application, where i used the latest frontend stacks and implementing backend with prisma and mongodb, nextauth to fully understand how prisma can be used to perform CRUD operations on mongodb", skills: ["Next.js", "Tailwind CSS", "Prisma", "MongoDB"] },
+    { name: "NFTMarketplace", img: "./images/nftmarketplace.png", description: "This is a beautifully designed marketplace where user can create and list an NFT for other users to buy", skills: ["Solidity", "Ethers.js", "Hardhat"] },
   ];
 
   return (
     <section id="projects" className="px-20 py-16">
-      <h2 className="text-3xl font-bold mb-6 text-center">Portfolio</h2>
-      <div className="flex gap-4 justify-center mb-10">
-        <button className="bg-orange-500 px-4 py-1 rounded">All</button>
-        <button className="border px-4 py-1 rounded">Web Design</button>
-        <button className="border px-4 py-1 rounded">App Design</button>
-        <button className="border px-4 py-1 rounded">Branding</button>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <h1 className="text-3xl font-bold mb-6 text-center">Projects</h1>
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
         {projects.map((p, i) => (
           <div key={i} className="bg-gray-900 rounded-lg overflow-hidden">
-            <img src={p.img} alt={p.name} />
+            <img className="px-20 pt-8" src={p.img} alt={p.name} width="600" height="500" />
             <div className="p-4">
               <h3 className="font-bold">{p.name}</h3>
-              <p className="text-gray-400">{p.category}</p>
+              <p className="text-gray-400">{p.description}</p>
+              <button className="mt-4 bg-orange-500 px-4 py-2 rounded">View Details</button>
             </div>
           </div>
         ))}

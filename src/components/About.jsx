@@ -1,10 +1,7 @@
 function About() {
   return (
     <section id="about" className="flex px-20 py-20 items-center">
-      <div className="w-1/2">
-        <img src="./images/profilepic.jpg" alt="about" className="rounded-lg" />
-      </div>
-      <div className="w-1/2 pl-10">
+      <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4">About Me</h2>
         <p className="text-gray-400 mb-6">
           Highly talented professional with effective multi-tasking aptitude and
